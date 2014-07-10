@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3F9062B196E865B00443414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062A196E865B00443414 /* Foundation.framework */; };
+		C3F9062D196E865B00443414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062C196E865B00443414 /* CoreGraphics.framework */; };
+		C3F9062F196E865B00443414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062E196E865B00443414 /* UIKit.framework */; };
+		C3F90631196E865B00443414 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F90630196E865B00443414 /* CoreData.framework */; };
+		C3F90637196E865B00443414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F90635196E865B00443414 /* InfoPlist.strings */; };
+		C3F90639196E865B00443414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90638196E865B00443414 /* main.m */; };
+		C3F9063D196E865B00443414 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F9063C196E865B00443414 /* AppDelegate.m */; };
+		C3F90640196E865C00443414 /* HttpConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3F9063E196E865C00443414 /* HttpConnect.xcdatamodeld */; };
+		C3F90642196E865C00443414 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F90641196E865C00443414 /* Images.xcassets */; };
+		C3F90649196E865C00443414 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F90648196E865C00443414 /* XCTest.framework */; };
+		C3F9064A196E865C00443414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062A196E865B00443414 /* Foundation.framework */; };
+		C3F9064B196E865C00443414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062E196E865B00443414 /* UIKit.framework */; };
+		C3F9064C196E865C00443414 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F90630196E865B00443414 /* CoreData.framework */; };
+		C3F90654196E865C00443414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F90652196E865C00443414 /* InfoPlist.strings */; };
+		C3F90656196E865C00443414 /* HttpConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90655196E865C00443414 /* HttpConnectTests.m */; };
+		C3F90665196E86AE00443414 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90661196E86AE00443414 /* Connect.m */; };
+		C3F90666196E86AE00443414 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90664196E86AE00443414 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3F9064D196E865C00443414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F9061F196E865B00443414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F90626196E865B00443414;
+			remoteInfo = HttpConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3F90627196E865B00443414 /* HttpConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F9062A196E865B00443414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3F9062C196E865B00443414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3F9062E196E865B00443414 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3F90630196E865B00443414 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3F90634196E865B00443414 /* HttpConnect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpConnect-Info.plist"; sourceTree = "<group>"; };
+		C3F90636196E865B00443414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3F90638196E865B00443414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3F9063A196E865B00443414 /* HttpConnect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpConnect-Prefix.pch"; sourceTree = "<group>"; };
+		C3F9063B196E865B00443414 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3F9063C196E865B00443414 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3F9063F196E865C00443414 /* HttpConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HttpConnect.xcdatamodel; sourceTree = "<group>"; };
+		C3F90641196E865C00443414 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3F90647196E865C00443414 /* HttpConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F90648196E865C00443414 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3F90651196E865C00443414 /* HttpConnectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpConnectTests-Info.plist"; sourceTree = "<group>"; };
+		C3F90653196E865C00443414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3F90655196E865C00443414 /* HttpConnectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpConnectTests.m; sourceTree = "<group>"; };
+		C3F90660196E86AE00443414 /* Connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect.h; sourceTree = "<group>"; };
+		C3F90661196E86AE00443414 /* Connect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect.m; sourceTree = "<group>"; };
+		C3F90663196E86AE00443414 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C3F90664196E86AE00443414 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3F90624196E865B00443414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F9062D196E865B00443414 /* CoreGraphics.framework in Frameworks */,
+				C3F90631196E865B00443414 /* CoreData.framework in Frameworks */,
+				C3F9062F196E865B00443414 /* UIKit.framework in Frameworks */,
+				C3F9062B196E865B00443414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F90644196E865C00443414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F90649196E865C00443414 /* XCTest.framework in Frameworks */,
+				C3F9064C196E865C00443414 /* CoreData.framework in Frameworks */,
+				C3F9064B196E865C00443414 /* UIKit.framework in Frameworks */,
+				C3F9064A196E865C00443414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3F9061E196E865B00443414 = {
+			isa = PBXGroup;
+			children = (
+				C3F90632196E865B00443414 /* HttpConnect */,
+				C3F9064F196E865C00443414 /* HttpConnectTests */,
+				C3F90629196E865B00443414 /* Frameworks */,
+				C3F90628196E865B00443414 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3F90628196E865B00443414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90627196E865B00443414 /* HttpConnect.app */,
+				C3F90647196E865C00443414 /* HttpConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3F90629196E865B00443414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F9062A196E865B00443414 /* Foundation.framework */,
+				C3F9062C196E865B00443414 /* CoreGraphics.framework */,
+				C3F9062E196E865B00443414 /* UIKit.framework */,
+				C3F90630196E865B00443414 /* CoreData.framework */,
+				C3F90648196E865C00443414 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3F90632196E865B00443414 /* HttpConnect */ = {
+			isa = PBXGroup;
+			children = (
+				C3F9065F196E86AE00443414 /* network */,
+				C3F9063B196E865B00443414 /* AppDelegate.h */,
+				C3F9063C196E865B00443414 /* AppDelegate.m */,
+				C3F90641196E865C00443414 /* Images.xcassets */,
+				C3F9063E196E865C00443414 /* HttpConnect.xcdatamodeld */,
+				C3F90633196E865B00443414 /* Supporting Files */,
+			);
+			path = HttpConnect;
+			sourceTree = "<group>";
+		};
+		C3F90633196E865B00443414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90634196E865B00443414 /* HttpConnect-Info.plist */,
+				C3F90635196E865B00443414 /* InfoPlist.strings */,
+				C3F90638196E865B00443414 /* main.m */,
+				C3F9063A196E865B00443414 /* HttpConnect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3F9064F196E865C00443414 /* HttpConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90655196E865C00443414 /* HttpConnectTests.m */,
+				C3F90650196E865C00443414 /* Supporting Files */,
+			);
+			path = HttpConnectTests;
+			sourceTree = "<group>";
+		};
+		C3F90650196E865C00443414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90651196E865C00443414 /* HttpConnectTests-Info.plist */,
+				C3F90652196E865C00443414 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3F9065F196E86AE00443414 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90660196E86AE00443414 /* Connect.h */,
+				C3F90661196E86AE00443414 /* Connect.m */,
+				C3F90662196E86AE00443414 /* Reachability */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		C3F90662196E86AE00443414 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C3F90663196E86AE00443414 /* Reachability.h */,
+				C3F90664196E86AE00443414 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3F90626196E865B00443414 /* HttpConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F90659196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnect" */;
+			buildPhases = (
+				C3F90623196E865B00443414 /* Sources */,
+				C3F90624196E865B00443414 /* Frameworks */,
+				C3F90625196E865B00443414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HttpConnect;
+			productName = HttpConnect;
+			productReference = C3F90627196E865B00443414 /* HttpConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3F90646196E865C00443414 /* HttpConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F9065C196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnectTests" */;
+			buildPhases = (
+				C3F90643196E865C00443414 /* Sources */,
+				C3F90644196E865C00443414 /* Frameworks */,
+				C3F90645196E865C00443414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3F9064E196E865C00443414 /* PBXTargetDependency */,
+			);
+			name = HttpConnectTests;
+			productName = HttpConnectTests;
+			productReference = C3F90647196E865C00443414 /* HttpConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3F9061F196E865B00443414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hutu;
+				TargetAttributes = {
+					C3F90646196E865C00443414 = {
+						TestTargetID = C3F90626196E865B00443414;
+					};
+				};
+			};
+			buildConfigurationList = C3F90622196E865B00443414 /* Build configuration list for PBXProject "HttpConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3F9061E196E865B00443414;
+			productRefGroup = C3F90628196E865B00443414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F90626196E865B00443414 /* HttpConnect */,
+				C3F90646196E865C00443414 /* HttpConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3F90625196E865B00443414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F90637196E865B00443414 /* InfoPlist.strings in Resources */,
+				C3F90642196E865C00443414 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F90645196E865C00443414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F90654196E865C00443414 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3F90623196E865B00443414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F90640196E865C00443414 /* HttpConnect.xcdatamodeld in Sources */,
+				C3F9063D196E865B00443414 /* AppDelegate.m in Sources */,
+				C3F90665196E86AE00443414 /* Connect.m in Sources */,
+				C3F90639196E865B00443414 /* main.m in Sources */,
+				C3F90666196E86AE00443414 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F90643196E865C00443414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F90656196E865C00443414 /* HttpConnectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3F9064E196E865C00443414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3F90626196E865B00443414 /* HttpConnect */;
+			targetProxy = C3F9064D196E865C00443414 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3F90635196E865B00443414 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F90636196E865B00443414 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3F90652196E865C00443414 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F90653196E865C00443414 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3F90657196E865C00443414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3F90658196E865C00443414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3F9065A196E865C00443414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnect/HttpConnect-Prefix.pch";
+				INFOPLIST_FILE = "HttpConnect/HttpConnect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3F9065B196E865C00443414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnect/HttpConnect-Prefix.pch";
+				INFOPLIST_FILE = "HttpConnect/HttpConnect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3F9065D196E865C00443414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HttpConnect.app/HttpConnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnect/HttpConnect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HttpConnectTests/HttpConnectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3F9065E196E865C00443414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HttpConnect.app/HttpConnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnect/HttpConnect-Prefix.pch";
+				INFOPLIST_FILE = "HttpConnectTests/HttpConnectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3F90622196E865B00443414 /* Build configuration list for PBXProject "HttpConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F90657196E865C00443414 /* Debug */,
+				C3F90658196E865C00443414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F90659196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F9065A196E865C00443414 /* Debug */,
+				C3F9065B196E865C00443414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3F9065C196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F9065D196E865C00443414 /* Debug */,
+				C3F9065E196E865C00443414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3F9063E196E865C00443414 /* HttpConnect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3F9063F196E865C00443414 /* HttpConnect.xcdatamodel */,
+			);
+			currentVersion = C3F9063F196E865C00443414 /* HttpConnect.xcdatamodel */;
+			path = HttpConnect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3F9061F196E865B00443414 /* Project object */;
+}
