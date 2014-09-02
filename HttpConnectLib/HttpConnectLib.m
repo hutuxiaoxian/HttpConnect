@@ -1,12 +1,14 @@
 //
-//  Connect.m
-//  HutuConnect
+//  HttpConnectLib.m
+//  HttpConnectLib
 //
-//  Created by 糊涂 on 14-6-27.
-//  Copyright (c) 2014年 糊涂. All rights reserved.
-//  单例类，网络请求
+//  Created by 糊涂 on 14-8-20.
+//  Copyright (c) 2014年 hutu. All rights reserved.
+//
 
-#import "Connect.h"
+#import "HttpConnectLib.h"
+
+
 #define TimeOut                 50.0
 #define POST                    @"POST"
 #define GET                     @"GET"
@@ -14,18 +16,18 @@
 #define BOUNDARY_HEAD               @"&"
 #define ENDCHAR                 @"\r\n"
 
-@interface Connect()<NSURLConnectionDelegate>
+@interface HttpConnectLib()<NSURLConnectionDelegate>
 @property NSMutableArray *urlQueue;
 @property NSMutableSet *urlSet;
 @property id<ResponseDelegate>delegate;
 @end
 
-@implementation Connect
+@implementation HttpConnectLib
 
-static Connect *mConnect;
-+(Connect*)getInstance{
+static HttpConnectLib *mConnect;
++(HttpConnectLib*)getInstance{
     if (!mConnect) {
-        mConnect = [[Connect alloc] init];
+        mConnect = [[HttpConnectLib alloc] init];
     }
     return mConnect;
 }
@@ -89,10 +91,10 @@ static Connect *mConnect;
     [req setHTTPShouldHandleCookies:NO];
     
     [req setHTTPMethod:POST];
-//    [req addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];//请求类型头
+    //    [req addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];//请求类型头
     
     [req addValue:[NSString stringWithFormat:@"multipart/form-data; boundary=%@", BOUNDARY] forHTTPHeaderField:@"Content-Type"];//body数据换行分割符
-//    [req addValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];//数据采用gzip压缩
+    //    [req addValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];//数据采用gzip压缩
     [req addValue:@"UTF-8" forHTTPHeaderField:@"charset"];//编码格式
     NSData *datBody = [self postBodyWithDict:dict];
     NSLog(@"%@",[[NSString alloc] initWithData:datBody encoding:NSUTF8StringEncoding]);
@@ -102,8 +104,8 @@ static Connect *mConnect;
     NSError *err ;
     
     NSURLResponse *resp;
-     
-//    NSURLConnection *conn = [NSURLConnection connectionWithRequest:req delegate:self];
+    
+    //    NSURLConnection *conn = [NSURLConnection connectionWithRequest:req delegate:self];
     
     NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&err];
     
@@ -151,7 +153,7 @@ static Connect *mConnect;
                     });
                 }
             }
-
+            
         });
         
     }
@@ -169,7 +171,7 @@ static Connect *mConnect;
 //格式化post的内容
 -(NSData*)postBodyWithDict:(NSDictionary*)dict{
     NSMutableData *body = [[NSMutableData alloc] init];
-//    [body appendData:[self stringToData:ENDCHAR]];
+    //    [body appendData:[self stringToData:ENDCHAR]];
     if ([@"&" isEqualToString:BOUNDARY]) {
         NSString *strBody = @"";
         for (NSString*key in [dict allKeys]) {
@@ -192,10 +194,10 @@ static Connect *mConnect;
             
             [body appendData:[self stringToData:ENDCHAR]];
         }
-//        [body appendData:[self stringToData:[NSString stringWithFormat:@"%@--\r\n",BOUNDARY]]];
+        //        [body appendData:[self stringToData:[NSString stringWithFormat:@"%@--\r\n",BOUNDARY]]];
     }
     
-//    NSLog(@"%@",[[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding]);
+    //    NSLog(@"%@",[[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding]);
     
     return body;
 }
@@ -240,10 +242,10 @@ static Connect *mConnect;
     
     NSMutableData *data = [[NSMutableData alloc] init];
     [data appendData:[self postBodyWithDict:body]];
-//    [data appendData:[self stringToData:ENDCHAR]];
+    //    [data appendData:[self stringToData:ENDCHAR]];
     [data appendData:[self stringToData:[@"--" stringByAppendingString:BOUNDARY]]];
     [data appendData:[self stringToData:ENDCHAR]];
-//    [data appendData:[self stringToData:ENDCHAR]];
+    //    [data appendData:[self stringToData:ENDCHAR]];
     NSString *imgName = @"Filedata";
     if ([strUrl hasPrefix:@"https://api.weibo.com"]) {
         imgName = @"pic";
@@ -263,12 +265,12 @@ static Connect *mConnect;
     
     [req setHTTPMethod:POST];
     NSString *model = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", BOUNDARY] ;
-//    , @"Content-Length": [NSString stringWithFormat:@"%lu",(unsigned long)[data length]]
+    //    , @"Content-Length": [NSString stringWithFormat:@"%lu",(unsigned long)[data length]]
     NSDictionary *dict = @{@"Content-Type": model, @"Charset": @"UTF-8", @"Accept-Language": @"zh-CN,zh"};
     [req setAllHTTPHeaderFields:dict];
-//    [req setHTTPShouldHandleCookies:NO];
-//    NSInputStream *is = [[NSInputStream alloc] initWithData:data];
-//    [req setHTTPBodyStream:is];//body数据
+    //    [req setHTTPShouldHandleCookies:NO];
+    //    NSInputStream *is = [[NSInputStream alloc] initWithData:data];
+    //    [req setHTTPBodyStream:is];//body数据
     [req setHTTPBody:data];
     NSError *err ;
     
@@ -308,7 +310,7 @@ static Connect *mConnect;
     return fType;
 }
 -(NSData*)stringToData:(NSString*)str{
-//    NSString *unicodeStr = [NSString stringWithCString:[str UTF8String] encoding:NSUnicodeStringEncoding];
+    //    NSString *unicodeStr = [NSString stringWithCString:[str UTF8String] encoding:NSUnicodeStringEncoding];
     return [str dataUsingEncoding:NSUTF8StringEncoding];
 }
 

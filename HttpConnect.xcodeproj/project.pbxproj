@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA6E15B319A49EA600BECBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062A196E865B00443414 /* Foundation.framework */; };
+		AA6E15B819A49EA600BECBDC /* HttpConnectLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA6E15B719A49EA600BECBDC /* HttpConnectLib.h */; };
+		AA6E15BA19A49EA600BECBDC /* HttpConnectLib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6E15B919A49EA600BECBDC /* HttpConnectLib.m */; };
+		AA6E15C019A49EA600BECBDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F90648196E865C00443414 /* XCTest.framework */; };
+		AA6E15C119A49EA600BECBDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062A196E865B00443414 /* Foundation.framework */; };
+		AA6E15C219A49EA600BECBDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062E196E865B00443414 /* UIKit.framework */; };
+		AA6E15C519A49EA600BECBDC /* libHttpConnectLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6E15B219A49EA600BECBDC /* libHttpConnectLib.a */; };
+		AA6E15CB19A49EA600BECBDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA6E15C919A49EA600BECBDC /* InfoPlist.strings */; };
+		AA6E15CD19A49EA600BECBDC /* HttpConnectLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6E15CC19A49EA600BECBDC /* HttpConnectLibTests.m */; };
 		C3F9062B196E865B00443414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062A196E865B00443414 /* Foundation.framework */; };
 		C3F9062D196E865B00443414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062C196E865B00443414 /* CoreGraphics.framework */; };
 		C3F9062F196E865B00443414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9062E196E865B00443414 /* UIKit.framework */; };
@@ -23,10 +32,17 @@
 		C3F90654196E865C00443414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F90652196E865C00443414 /* InfoPlist.strings */; };
 		C3F90656196E865C00443414 /* HttpConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90655196E865C00443414 /* HttpConnectTests.m */; };
 		C3F90665196E86AE00443414 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90661196E86AE00443414 /* Connect.m */; };
-		C3F90666196E86AE00443414 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90664196E86AE00443414 /* Reachability.m */; };
+		C3F90666196E86AE00443414 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F90664196E86AE00443414 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA6E15C319A49EA600BECBDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F9061F196E865B00443414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA6E15B119A49EA600BECBDC;
+			remoteInfo = HttpConnectLib;
+		};
 		C3F9064D196E865C00443414 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3F9061F196E865B00443414 /* Project object */;
@@ -36,7 +52,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA6E15B019A49EA600BECBDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AA6E15B819A49EA600BECBDC /* HttpConnectLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AA6E15B219A49EA600BECBDC /* libHttpConnectLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHttpConnectLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6E15B619A49EA600BECBDC /* HttpConnectLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpConnectLib-Prefix.pch"; sourceTree = "<group>"; };
+		AA6E15B719A49EA600BECBDC /* HttpConnectLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpConnectLib.h; sourceTree = "<group>"; };
+		AA6E15B919A49EA600BECBDC /* HttpConnectLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpConnectLib.m; sourceTree = "<group>"; };
+		AA6E15BF19A49EA600BECBDC /* HttpConnectLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpConnectLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6E15C819A49EA600BECBDC /* HttpConnectLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpConnectLibTests-Info.plist"; sourceTree = "<group>"; };
+		AA6E15CA19A49EA600BECBDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA6E15CC19A49EA600BECBDC /* HttpConnectLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpConnectLibTests.m; sourceTree = "<group>"; };
 		C3F90627196E865B00443414 /* HttpConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F9062A196E865B00443414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3F9062C196E865B00443414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +99,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA6E15AF19A49EA600BECBDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6E15B319A49EA600BECBDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA6E15BC19A49EA600BECBDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6E15C019A49EA600BECBDC /* XCTest.framework in Frameworks */,
+				AA6E15C219A49EA600BECBDC /* UIKit.framework in Frameworks */,
+				AA6E15C519A49EA600BECBDC /* libHttpConnectLib.a in Frameworks */,
+				AA6E15C119A49EA600BECBDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3F90624196E865B00443414 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,11 +143,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA6E15B419A49EA600BECBDC /* HttpConnectLib */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E15B719A49EA600BECBDC /* HttpConnectLib.h */,
+				AA6E15B919A49EA600BECBDC /* HttpConnectLib.m */,
+				AA6E15B519A49EA600BECBDC /* Supporting Files */,
+			);
+			path = HttpConnectLib;
+			sourceTree = "<group>";
+		};
+		AA6E15B519A49EA600BECBDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E15B619A49EA600BECBDC /* HttpConnectLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA6E15C619A49EA600BECBDC /* HttpConnectLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E15CC19A49EA600BECBDC /* HttpConnectLibTests.m */,
+				AA6E15C719A49EA600BECBDC /* Supporting Files */,
+			);
+			path = HttpConnectLibTests;
+			sourceTree = "<group>";
+		};
+		AA6E15C719A49EA600BECBDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E15C819A49EA600BECBDC /* HttpConnectLibTests-Info.plist */,
+				AA6E15C919A49EA600BECBDC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C3F9061E196E865B00443414 = {
 			isa = PBXGroup;
 			children = (
 				C3F90632196E865B00443414 /* HttpConnect */,
 				C3F9064F196E865C00443414 /* HttpConnectTests */,
+				AA6E15B419A49EA600BECBDC /* HttpConnectLib */,
+				AA6E15C619A49EA600BECBDC /* HttpConnectLibTests */,
 				C3F90629196E865B00443414 /* Frameworks */,
 				C3F90628196E865B00443414 /* Products */,
 			);
@@ -102,6 +196,8 @@
 			children = (
 				C3F90627196E865B00443414 /* HttpConnect.app */,
 				C3F90647196E865C00443414 /* HttpConnectTests.xctest */,
+				AA6E15B219A49EA600BECBDC /* libHttpConnectLib.a */,
+				AA6E15BF19A49EA600BECBDC /* HttpConnectLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +278,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA6E15B119A49EA600BECBDC /* HttpConnectLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6E15D219A49EA700BECBDC /* Build configuration list for PBXNativeTarget "HttpConnectLib" */;
+			buildPhases = (
+				AA6E15AE19A49EA600BECBDC /* Sources */,
+				AA6E15AF19A49EA600BECBDC /* Frameworks */,
+				AA6E15B019A49EA600BECBDC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HttpConnectLib;
+			productName = HttpConnectLib;
+			productReference = AA6E15B219A49EA600BECBDC /* libHttpConnectLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA6E15BE19A49EA600BECBDC /* HttpConnectLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6E15D319A49EA700BECBDC /* Build configuration list for PBXNativeTarget "HttpConnectLibTests" */;
+			buildPhases = (
+				AA6E15BB19A49EA600BECBDC /* Sources */,
+				AA6E15BC19A49EA600BECBDC /* Frameworks */,
+				AA6E15BD19A49EA600BECBDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA6E15C419A49EA600BECBDC /* PBXTargetDependency */,
+			);
+			name = HttpConnectLibTests;
+			productName = HttpConnectLibTests;
+			productReference = AA6E15BF19A49EA600BECBDC /* HttpConnectLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C3F90626196E865B00443414 /* HttpConnect */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F90659196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnect" */;
@@ -226,6 +357,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = hutu;
 				TargetAttributes = {
+					AA6E15BE19A49EA600BECBDC = {
+						TestTargetID = C3F90626196E865B00443414;
+					};
 					C3F90646196E865C00443414 = {
 						TestTargetID = C3F90626196E865B00443414;
 					};
@@ -245,11 +379,21 @@
 			targets = (
 				C3F90626196E865B00443414 /* HttpConnect */,
 				C3F90646196E865C00443414 /* HttpConnectTests */,
+				AA6E15B119A49EA600BECBDC /* HttpConnectLib */,
+				AA6E15BE19A49EA600BECBDC /* HttpConnectLibTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA6E15BD19A49EA600BECBDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6E15CB19A49EA600BECBDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3F90625196E865B00443414 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +414,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA6E15AE19A49EA600BECBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6E15BA19A49EA600BECBDC /* HttpConnectLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA6E15BB19A49EA600BECBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6E15CD19A49EA600BECBDC /* HttpConnectLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3F90623196E865B00443414 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +453,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AA6E15C419A49EA600BECBDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA6E15B119A49EA600BECBDC /* HttpConnectLib */;
+			targetProxy = AA6E15C319A49EA600BECBDC /* PBXContainerItemProxy */;
+		};
 		C3F9064E196E865C00443414 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C3F90626196E865B00443414 /* HttpConnect */;
@@ -301,6 +466,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AA6E15C919A49EA600BECBDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6E15CA19A49EA600BECBDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C3F90635196E865B00443414 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,6 +493,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA6E15CE19A49EA700BECBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HttpConnectLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnectLib/HttpConnectLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA6E15CF19A49EA700BECBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HttpConnectLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnectLib/HttpConnectLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA6E15D019A49EA700BECBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HttpConnect.app/HttpConnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnectLib/HttpConnectLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HttpConnectLibTests/HttpConnectLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AA6E15D119A49EA700BECBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HttpConnect.app/HttpConnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HttpConnectLib/HttpConnectLib-Prefix.pch";
+				INFOPLIST_FILE = "HttpConnectLibTests/HttpConnectLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		C3F90657196E865C00443414 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +702,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA6E15D219A49EA700BECBDC /* Build configuration list for PBXNativeTarget "HttpConnectLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6E15CE19A49EA700BECBDC /* Debug */,
+				AA6E15CF19A49EA700BECBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA6E15D319A49EA700BECBDC /* Build configuration list for PBXNativeTarget "HttpConnectLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6E15D019A49EA700BECBDC /* Debug */,
+				AA6E15D119A49EA700BECBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C3F90622196E865B00443414 /* Build configuration list for PBXProject "HttpConnect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -477,6 +734,7 @@
 				C3F9065B196E865C00443414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3F9065C196E865C00443414 /* Build configuration list for PBXNativeTarget "HttpConnectTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +743,7 @@
 				C3F9065E196E865C00443414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

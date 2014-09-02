@@ -1,20 +1,21 @@
 //
-//  Connect.h
-//  HutuConnect
+//  HttpConnectLib.h
+//  HttpConnectLib
 //
-//  Created by 糊涂 on 14-6-27.
-//  Copyright (c) 2014年 糊涂. All rights reserved.
-//  单例类，网络请求
+//  Created by 糊涂 on 14-8-20.
+//  Copyright (c) 2014年 hutu. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+
 
 // 网络请求回调
 @protocol ResponseDelegate <NSObject>
 -(void)responseDate:(id) json Type:(NSInteger)type;
 @end
 
-@interface Connect : NSObject
-+(Connect*)getInstance;
+@interface HttpConnectLib : NSObject
++(HttpConnectLib*)getInstance;
 
 //同步的get请求
 -(NSData*)getSynConnectWithURL:(NSString*)strUrl;
@@ -35,4 +36,5 @@
 
 //使用JSON解析数据
 -(NSDictionary*)jsonData:(NSData*)data;
+
 @end
